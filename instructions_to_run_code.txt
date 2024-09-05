@@ -1,0 +1,25 @@
+
+Instructions to Run Weakly Supervised Segmentation Code:
+
+1. Make sure you have Python installed on your system.
+2. Install the necessary libraries if you don't have them already:
+   Run the following command in your terminal or command prompt:
+   
+   pip install torch
+
+3. Prepare your dataset and note its path.
+   The script will prompt you to provide the path to your dataset when you run it.
+
+4. To run the script:
+   - Open your terminal or command prompt.
+   - Navigate to the folder where the Python file is saved.
+   - Run the script using the following command:
+
+   python weakly_supervised_segmentation_with_input.py
+
+5. When prompted, enter the full path to your dataset and press Enter.
+
+6. The code will process the dataset and run the weakly supervised segmentation framework.
+
+7. Check the output for the final segmentation map or loss values.
+
