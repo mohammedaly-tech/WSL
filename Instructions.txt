@@ -1,0 +1,50 @@
+
+# Instructions for Training on TG3K and TN3K Datasets
+
+## 1. Setup the Environment
+- Install Python 3.7 or above.
+- Install dependencies using the provided `requirements.txt`:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## 2. Dataset Preparation
+- Download the TG3K dataset from the following link:
+  - [TG3K Dataset](https://github.com/openmedlab/Awesome-Medical-Dataset/blob/main/resources/TG3K.md)
+- Download the TN3K dataset from:
+  - [TN3K Dataset](https://drive.google.com/file/d/1reHyY5eTZ5uePXMVMzFOq5j3eFOSp50F/view)
+
+### Organize the Datasets:
+- Place the **TG3K** images and masks in a folder structure like:
+    ```
+    data/tg3k/
+        ├── images/
+        └── masks/
+    ```
+- Place the **TN3K** images and masks in a folder structure like:
+    ```
+    data/tn3k/
+        ├── images/
+        └── masks/
+    ```
+
+## 3. Training the Model
+- To train the model on the TG3K dataset, run:
+    ```bash
+    python train.py
+    ```
+- The model will automatically save the weights and log the loss during training.
+
+## 4. Testing the Model
+- To test the model on the **TN3K** dataset:
+    ```bash
+    python train.py --test
+    ```
+
+## 5. Model Architecture
+- We use a **U-Net** architecture for segmentation tasks, implemented using PyTorch.
+
+## 6. License
+- The code is released under the **MIT License**, allowing you to freely use and modify the code for your own purposes.
+
+For any further details or issues, please feel free to contact the contributors of this repository.
